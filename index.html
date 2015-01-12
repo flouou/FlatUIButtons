@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <!--<script src="js/script.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        
+        <center class="full-container">
+            <a id="one" href="#"><img class="single-image" src="img/wave.png"></img></a>
+            <a href="#"><img class="single-image" src="img/leaf.png"></img></a>
+            <a href="#"><img class="single-image" src="img/drop.png"></img></a>
+            <a href="#"><img class="single-image" src="img/flash.png"></img></a>
+            <a href="#"><img class="single-image" src="img/sun.png"></img></a>
+            <a href="#"><img class="double-image" src="img/play.png"></img></a>
+            <a href="#"><img class="single-image" src="img/cloud.png"></img></a>
+        </center>
+
+<center class="full-container">
+            <a id="one" href="#"><img class="single-image" src="img/wave_shadow.png"></img></a>
+            <a href="#"><img class="single-image" src="img/leaf_shadow.png"></img></a>
+            <a href="#"><img class="single-image" src="img/drop_shadow.png"></img></a>
+            <a href="#"><img class="single-image" src="img/flash_shadow.png"></img></a>
+            <a href="#"><img class="single-image" src="img/sun_shadow.png"></img></a>
+            <a href="#"><img class="double-image" src="img/play_shadow.png"></img></a>
+            <a href="#"><img class="single-image" src="img/cloud_shadow.png"></img></a>
+        </center>
+
+        <script>
+            $("a").click(function() {
+                $(this).find('img:first').animate({
+                    opacity: 0.9,
+                    height:148
+                }, 70, function() {
+                    $(this).animate({
+                        opacity: 1,
+                        height:150
+                    }, 70);
+                });
+            });
+        </script>
+    </body>
+</html>
